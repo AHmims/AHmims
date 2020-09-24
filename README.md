@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/img/chinatsu.gif" />
+  <img src="/public/img/come.gif" />
 </p>
 <!--
 **AHmims/AHmims** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
