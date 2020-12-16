@@ -26,6 +26,23 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Test PWA</title>
+    <style>
+      #timer {
+        font-family: monospace;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <span id="timer"> 00 </span>
+    <script>
+      setInterval(() => {
+        var time = parseInt(document.getElementById("timer").innerText);
+        console.info(time);
+        document.getElementById("timer").innerText = time + 1;
+      }, 1000);
+    </script>
+  </body>
 </html>
