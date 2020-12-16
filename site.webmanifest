@@ -1,0 +1,22 @@
+{
+  "short_name": "Test PWA",
+  "name": "Test PWA",
+  "description": "Test PWA",
+  "icons": [
+    {
+      "src": "public/favicon/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "public/favicon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000"
+}

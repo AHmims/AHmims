@@ -20,7 +20,7 @@
       sizes="16x16"
       href="public/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="public/favicon/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta
       name="msapplication-config"
       content="public/favicon/browserconfig.xml"
@@ -59,7 +59,7 @@
       if ("serviceWorker" in navigator) {
         // Use the window load event to keep the page load performant
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/service-worker.js");
+          navigator.serviceWorker.register("../service-worker.js");
         });
       }
     </script>
