@@ -4,14 +4,9 @@
   "description": "Test PWA",
   "icons": [
     {
-      "src": "public/favicon/android-chrome-192x192.png",
+      "src": "public/img/logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "public/favicon/android-chrome-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "592x592"
     }
   ],
   "start_url": "/?source=pwa",
