@@ -6,29 +6,36 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="public/favicon/apple-touch-icon.png"
+      href="favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="public/favicon/favicon-32x32.png"
+      href="favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="public/favicon/favicon-16x16.png"
+      href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="public/favicon/site.webmanifest" />
-    <meta
-      name="msapplication-config"
-      content="public/favicon/browserconfig.xml"
-    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Test PWA</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("../service-worker.js");
+        });
+      }
+    </script>
+  </body>
 </html>
