@@ -20,7 +20,6 @@
       sizes="16x16"
       href="public/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta
       name="msapplication-config"
       content="public/favicon/browserconfig.xml"
@@ -29,6 +28,9 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="public/css/index.css" />
     <title>Ali HMIMS</title>
+    <!--  -->
+    <link rel="manifest" href="site.webmanifest" />
+    <!--  -->
   </head>
   <body>
     <svg
@@ -55,11 +57,9 @@
     </span>
     <!--  -->
     <script>
-      // Check that service workers are supported
       if ("serviceWorker" in navigator) {
-        // Use the window load event to keep the page load performant
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("../service-worker.js");
+          navigator.serviceWorker.register("service-worker.js");
         });
       }
     </script>
