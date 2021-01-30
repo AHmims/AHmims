@@ -782,10 +782,6 @@ video {
   height: 4rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -1679,6 +1675,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1689,10 +1689,6 @@ video {
 
   .sm\:h-10 {
     height: 2.5rem;
-  }
-
-  .sm\:h-40 {
-    height: 10rem;
   }
 
   .sm\:h-96 {
